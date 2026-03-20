@@ -89,6 +89,7 @@ EXAMPLES = {
 
 # ── ADK pipeline runner ───────────────────────────────────────────────────────
 async def run_adk_pipeline(api_key: str, business_input: str) -> dict:
+    
     os.environ["GOOGLE_API_KEY"] = api_key
     os.environ["GOOGLE_GENAI_USE_VERTEXAI"] = "FALSE"
 
